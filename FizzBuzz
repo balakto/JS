@@ -9,4 +9,4 @@ const fizzBuzz = (begin, end) => {
     } else {
       console.log(i);
     }
-  }
+  };
