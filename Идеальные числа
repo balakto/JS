@@ -9,4 +9,3 @@ const isPerfect = (num) => {
     
   return sum===num;
 };
-// console.log(isPerfect(6));
