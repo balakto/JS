@@ -1,12 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+
+</body>
+</html>
+<ul id="result"></ul>
+<script>
 const fizzBuzz = (begin, end) => {
-  for (let i = begin; i <= end; i += 1) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
-      console.log("Fizz");
-    } else if (i % 5 === 0) {
-      console.log("Buzz");
-    } else {
-      console.log(i);
-    }
-  };
+let result = "";
+for (let i = begin; i <= end; i += 1) {
+if (i % 3 === 0 && i % 5 === 0) {
+    result += "<li>FizzBuzz</li>";
+} else if (i % 3 === 0) {
+    result += "<li>Fizz</li>";
+} else if (i % 5 === 0) {
+    result += "<li>Buzz</li>";
+} else {
+    result += `<li>${i}</li>`;
+}
+}
+document.getElementById("result").innerHTML = result;
+};
+fizzBuzz(1, 20); // для вывода
+</script>
+</body>
+<h1> Конец </h1>
+</html>
