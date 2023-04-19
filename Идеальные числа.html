@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> isPerfect</title>
+</head>
+<body>
+<script>
+const isPerfect = (num) => {
+let sum = 0;
+for(let i = 1;i < num;i+=1){
+if(num%i===0){
+sum+=i;
+}
+}
+return sum===num;
+};
+</script>
+</body>
+</html>
