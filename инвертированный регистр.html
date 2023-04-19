@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>инвертированный регистр</title>
+<script>
+const invertCase = (text) => {
+let result = '';
+for (let i = 0; i < text.length; i+=1) {
+let abc = text[i];
+if (abc === abc.toUpperCase()) {
+result += abc.toLowerCase();
+} else {
+result += abc.toUpperCase();
+}
+}
+return result;
+}
+</script>
+</head>
+<body>
+</html>
