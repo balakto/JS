@@ -1,5 +1,4 @@
-## JS
-JS projects
+## balakto JS 
 1) ___fizzbuzz.html___ 
 * fizzBuzz <--- вызов функции
 	* Тесты:
